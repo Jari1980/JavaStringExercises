@@ -7,15 +7,21 @@ public class Main {
         var scan = new Scanner(System.in);
         int num;
         while (true) {
-            System.out.println("Which exercise do you want to see, 1-11, :");
+            System.out.println("Which exercise do you want to see, 1-11 (111 for the duplicate exercise 1), :");
             try {
                 num = scan.nextInt();
                 switch (num) {
                     case 1:
                         exercise1();
                         break;
+                    case 111:
+                        exercise111();
+                        break;
                     case 2:
                         exercise2();
+                        break;
+                    case 3:
+                        exercise3();
                         break;
                     default:
                         System.out.println("There is no such exercise");
@@ -27,7 +33,19 @@ public class Main {
             }
         }
     }
+    public static void exercise3(){
+        String given = "Ok this is not as long!";
+        String givenMod = given.substring(11, given.length()-1);
+        System.out.println("Form given \"Ok this is not as long!\" creating substring of \"not as long\" " +
+                "excluding the exclamation point: " + givenMod);
+    }
+
     public static void exercise2(){
+        String text = "Even longer example sentence";
+        System.out.println("The index of 'o' in the sentence \"Even longer example sentence\": " + text.indexOf("o"));
+    }
+
+    public static void exercise111(){
         String text = "Long example sentence";
         System.out.println("Char at index 6 in the sentence \"Long example sentence\": " + text.charAt(6));
     }
