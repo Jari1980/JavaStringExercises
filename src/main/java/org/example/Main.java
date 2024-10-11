@@ -29,6 +29,9 @@ public class Main {
                     case 5:
                         exercise5();
                         break;
+                    case 6:
+                        exercise6();
+                        break;
                     default:
                         System.out.println("There is no such exercise");
                         break;
@@ -39,6 +42,20 @@ public class Main {
             }
         }
     }
+    public static void exercise6(){
+        String text = "\tJ\ta\tv\ta\t";
+        String textTimmed = text.trim();
+        System.out.println("Given string: " + text + ", with tabspace from \"\\t\" trimmed : " + textTimmed);
+        System.out.println("Removing tab space: ");
+        String[] arr = text.split("\t", -1);
+        String textMod = "";
+        for (String element : arr){
+            textMod = textMod + element;
+        }
+        text = textMod;
+        System.out.println(text);
+    }
+
     public static void exercise5(){
         String text = "Java is the worst programming language!";
         System.out.println("From given string: " + text + " replacing word worst with best.");
