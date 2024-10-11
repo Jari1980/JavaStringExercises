@@ -23,6 +23,9 @@ public class Main {
                     case 3:
                         exercise3();
                         break;
+                    case 4:
+                        exercise4();
+                        break;
                     default:
                         System.out.println("There is no such exercise");
                         break;
@@ -33,6 +36,14 @@ public class Main {
             }
         }
     }
+    public static void exercise4(){
+        String text = "CAPS EQUALS SCREAMING";
+        text = text.toLowerCase();
+        System.out.println("Given string \"CAPS EQUALS SCREAMING\" converted to lowercase: " + text);
+        text = text.toUpperCase();
+        System.out.println("Given string \"CAPS EQUALS SCREAMING\" converted back to uppercase: " + text);
+    }
+
     public static void exercise3(){
         String given = "Ok this is not as long!";
         String givenMod = given.substring(11, given.length()-1);
