@@ -38,6 +38,9 @@ public class Main {
                     case 8:
                         exercise8();
                         break;
+                    case 9:
+                        exercise9();
+                        break;
                     default:
                         System.out.println("There is no such exercise");
                         break;
@@ -48,6 +51,16 @@ public class Main {
             }
         }
     }
+    public static void exercise9(){
+        String text = "Carl,Susie,Fredrick,Bob,Erik";
+        String[] arr = text.split(",");
+        System.out.println("From given string: \"Carl,Susie,Fredrick,Bob,Erik\" splicing names to array.");
+        System.out.println("Names in array:");
+        for (String element : arr){
+            System.out.println(element);
+        }
+    }
+
     public static void exercise8(){
         String text = "Oil and Water";
         String regex = (" and ");
