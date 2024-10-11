@@ -32,6 +32,9 @@ public class Main {
                     case 6:
                         exercise6();
                         break;
+                    case 7:
+                        exercise7();
+                        break;
                     default:
                         System.out.println("There is no such exercise");
                         break;
@@ -42,6 +45,13 @@ public class Main {
             }
         }
     }
+    public static void exercise7(){
+        int num = 20;
+        String numPar = String.valueOf(num);
+        numPar = numPar + "20";
+        System.out.println("Parsing int: 20 to string and concatinating it with \"20\": " + numPar);
+    }
+
     public static void exercise6(){
         String text = "\tJ\ta\tv\ta\t";
         String textTimmed = text.trim();
