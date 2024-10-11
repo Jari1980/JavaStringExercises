@@ -25,6 +25,7 @@ public class Main {
         }
     }
     public static void exercise1(){
-
+        String text = "Java";
+        System.out.println("The length of the String: \"Java\" is: " + text.length());
     }
 }
