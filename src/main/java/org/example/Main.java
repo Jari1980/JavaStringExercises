@@ -35,6 +35,9 @@ public class Main {
                     case 7:
                         exercise7();
                         break;
+                    case 8:
+                        exercise8();
+                        break;
                     default:
                         System.out.println("There is no such exercise");
                         break;
@@ -45,6 +48,17 @@ public class Main {
             }
         }
     }
+    public static void exercise8(){
+        String text = "Oil and Water";
+        String regex = (" and ");
+        String[] arr = text.split(regex);
+        System.out.println("From given string \"Oil an Water\" splitting words \"Oil\" and \"Water\" and storing them in array.");
+        System.out.println("Words in array:");
+        for(String element : arr){
+            System.out.println(element);
+        }
+    }
+
     public static void exercise7(){
         int num = 20;
         String numPar = String.valueOf(num);
