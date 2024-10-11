@@ -44,6 +44,9 @@ public class Main {
                     case 10:
                         exercise10();
                         break;
+                    case 11:
+                        exercise11();
+                        break;
                     default:
                         System.out.println("There is no such exercise");
                         break;
@@ -54,6 +57,15 @@ public class Main {
             }
         }
     }
+    public static void exercise11(){
+        char[] arr = new char[]{'J', 'a', 'v', 'a'};
+        String text = "";
+        for (int i = 0; i < arr.length; i++){
+            text = text + arr[i];
+        }
+        System.out.println("Converting \"char[]: {'J', 'a', 'v', 'a'}\" to a string: " + text);
+    }
+
     public static void exercise10(){
         String text = "ThisShouldBeConverted";
         char[] arr = new char[text.length()];
