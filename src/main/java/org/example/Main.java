@@ -26,6 +26,9 @@ public class Main {
                     case 4:
                         exercise4();
                         break;
+                    case 5:
+                        exercise5();
+                        break;
                     default:
                         System.out.println("There is no such exercise");
                         break;
@@ -36,6 +39,13 @@ public class Main {
             }
         }
     }
+    public static void exercise5(){
+        String text = "Java is the worst programming language!";
+        System.out.println("From given string: " + text + " replacing word worst with best.");
+        text = text.replace("worst", "best");
+        System.out.println(text);
+    }
+
     public static void exercise4(){
         String text = "CAPS EQUALS SCREAMING";
         text = text.toLowerCase();
