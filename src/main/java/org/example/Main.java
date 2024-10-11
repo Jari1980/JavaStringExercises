@@ -14,6 +14,9 @@ public class Main {
                     case 1:
                         exercise1();
                         break;
+                    case 2:
+                        exercise2();
+                        break;
                     default:
                         System.out.println("There is no such exercise");
                         break;
@@ -24,6 +27,11 @@ public class Main {
             }
         }
     }
+    public static void exercise2(){
+        String text = "Long example sentence";
+        System.out.println("Char at index 6 in the sentence \"Long example sentence\": " + text.charAt(6));
+    }
+
     public static void exercise1(){
         String text = "Java";
         System.out.println("The length of the String: \"Java\" is: " + text.length());
